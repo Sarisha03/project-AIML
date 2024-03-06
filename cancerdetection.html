@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: rgb(163, 57, 110);">
+
+<h1> <center><b><i><U><marquee width="70%" direction="left" height="40px" bgcolor="pink"<marquee> DETECTION OF CANCER TYPE </marquee></U> </i> </b></center></h1>
+    <form method="POST">
+        {% csrf_token %}
+       <center>
+        <table bgcolor="pink" > 
+            
+    <div1 class="left">
+            <tr>
+                <td>Radius mean</td>
+                <td> <input type="text"   name="textradius_mean"> </td>   
+            </tr>
+            <tr>
+                <td>Texture mean</td>
+                <td> <input type="text"  name="texttexture_mean"> </td>   
+            </tr>
+            <tr>
+                <td>Perimeter mean</td>
+                <td> <input type="text"  name="textperimeter_mean"> </td>   
+            </tr>
+            <tr>
+                <td>Area mean</td>
+                <td> <input type="text"  name="textarea_mean"> </td>   
+            </tr>
+            <tr>
+                <td>Smoothness mean</td>
+                <td> <input type="text"  name="textsmoothness_mean"> </td>   
+            </tr>
+            <tr>
+                <td>Compactness mean</td>
+                <td> <input type="text"  name="textcompactness_mean"> </td>   
+            </tr>
+            <tr>
+                <td>Concavity mean</td>
+                <td> <input type="text"  name="textconcavity_mean"> </td>   
+            </tr>
+            <tr>
+                <td>Concave points mean</td>
+                <td> <input type="text"  name="textconcave_points_mean"> </td>   
+            </tr>
+            <tr>
+                <td>Symmetry mean</td>
+                <td> <input type="text"  name="textsymmetry_mean"> </td>   
+            </tr>
+            <tr>
+                <td>Fractal dimension mean</td>
+                <td> <input type="text"  name="textfractal_dimension_mean"> </td>   
+            </tr>
+    </div1>
+    <div2 class="center">
+            <tr>
+                <td>Radius se</td>
+                <td> <input type="text"   name="textradius_se"> </td>   
+            </tr>
+            <tr>
+                <td>Texture se</td>
+                <td> <input type="text"  name="texttexture_se"> </td>   
+            </tr>
+            <tr>
+                <td>Perimeter se</td>
+                <td> <input type="text"  name="textperimeter_se"> </td>   
+            </tr>
+            <tr>
+                <td>Area se</td>
+                <td> <input type="text"  name="textarea_se"> </td>   
+            </tr>
+            <tr>
+                <td>Smoothness se</td>
+                <td> <input type="text"  name="textsmoothness_se"> </td>   
+            </tr>
+            <tr>
+                <td>Compactness se</td>
+                <td> <input type="text"  name="textcompactness_se"> </td>   
+            </tr>
+            <tr>
+                <td>Concavity se</td>
+                <td> <input type="text"  name="textconcavity_se"> </td>   
+            </tr>
+            <tr>
+                <td>Concave points se</td>
+                <td> <input type="text" name="textconcave_points_se"> </td>   
+            </tr>
+            <tr>
+                <td>Symmetry se</td>
+                <td> <input type="text"  name="textsymmetry_se"> </td>   
+            </tr>
+            <tr>
+                <td>Fractal dimension se</td>
+                <td> <input type="text"  name="textfractal_dimension_se"> </td>   
+            </tr>
+            </div2>
+            <div3 class="left">
+            <tr>
+                
+                <td>Radius worst </td>
+                <td> <input type="text" name="textradius_worst"> </td>   
+            </tr>
+            <tr>
+                <td>Texture worst</td>
+                <td> <input type="text"  name="texttexture_worst"> </td>   
+            </tr>
+            <tr>
+                <td>Perimeter worst</td>
+                <td> <input type="text"  name="textperimeter_worst"> </td>   
+            </tr>
+            <tr>
+                <td>Area worst</td>
+                <td> <input type="text"  name="textarea_worst"> </td>   
+            </tr>
+            <tr>
+                <td>Smoothness worst</td>
+                <td> <input type="text" name="textsmoothness_worst"> </td>   
+            </tr>
+            <tr>
+                <td>Compactness worst</td>
+                <td> <input type="text"  name="textcompactness_worst"> </td>   
+            </tr>
+            <tr>
+                <td>Concavity worst</td>
+                <td> <input type="text"  name="textconcavity_worst"> </td>   
+            </tr>
+            <tr>
+                <td>Concave points worst</td>
+                <td> <input type="text"  name="textconcave_points_worst"> </td>   
+            </tr>
+            <tr>
+                <td>Symmetry worst</td>
+                <td> <input type="text"  name="textsymmetry_worst"> </td>   
+            </tr>
+            <tr>
+                <td>Fractal dimension worst</td>
+                    <td> <input type="text"  name="textfractal_dimension_worst"> </td> 
+            </tr>
+            </div3>
+        </table>
+        </center>
+
+      <center>
+            <tr>
+                <td>
+                     <button type="SUBMIT" class="btn btn-danger" name="buttonpredict"><h2>  Predict  </h2></button>
+                     <h2> 'M'- Malignant   'B'-Benign </h2>
+                </td>
+            </tr>
+        </center>
+            <tr>
+                
+                <td>
+                    <center> <b>    {{ result }}        </b> </center>
+                </td>
+            </tr>
+        
+    </center>
+    <br><br><br>
+    <footer>
+       <center> <b><p>&copy; << By->>>>>  SARISHA N  ||  1HK21CS141     ||     Hkbk College of engineering   </p> </b></center>
+    </footer>
+        </form> 
+      </body>
+    </html>
